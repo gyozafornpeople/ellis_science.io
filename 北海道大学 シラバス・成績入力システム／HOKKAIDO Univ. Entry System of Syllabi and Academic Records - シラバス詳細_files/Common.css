@@ -1,0 +1,45 @@
+﻿/*body {background:#E8EBD7}*/
+
+a.common_link:link{  font-size: 100%; color:White; text-decoration: underline}
+a.common_link:visited{  font-size: 100%; color:White; text-decoration: underline}
+a:visited {  font-size: 100%; text-decoration: underline}
+
+.medium_bb {  font-size: 100%; font-weight: bold; color: #333333; background:#8DC73F}
+.side_light_green{ background-color:#8DC73F}
+.large_w {  font-size: 120%; color: #ffffff;  background:#48851D}
+
+.columnLeft { border-color:#111111; WIDTH: 30%; COLOR: white; BACKGROUND-COLOR: #48851d; TEXT-ALIGN: center }
+.columnRight { border-color:#111111; BACKGROUND-COLOR:white; text-align:left }
+
+/* ヘッダー用 */
+.NormalTitle
+{
+    font-size:x-large;
+    font-weight:bold;
+    padding:5px;
+    vertical-align:middle;
+    text-align:center;
+}
+
+/* グリッドのヘッダー用 */
+.GridTitle
+{
+    background-color:#48851D;
+    color:White;
+    font-size:x-large;
+    padding:7px;
+    vertical-align:middle;
+    text-align:center;
+}
+
+/* ============================== */
+/* ========= シラバス =========== */
+/* ============================== */
+/* 詳細画面背景色 */
+.DetailBaseBackBround{ background-color:#e8ebd7; }
+/* 時間割ヘッダー */
+.SummaryTd_Title { background-color:#48851d; }
+.SummaryTd_Title_Lbl { color:#ffffff; }
+.SummaryTd { background-color:#e8ebd7; }
+/* シラバス項目 */
+.ContentTrTitle { background-color:#8dc73f; }

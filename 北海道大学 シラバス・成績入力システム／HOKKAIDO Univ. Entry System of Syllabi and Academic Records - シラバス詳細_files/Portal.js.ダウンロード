@@ -1,0 +1,61 @@
+
+function DispTime(){ 
+var now = new Date(); 
+var year = now.getFullYear();	//年
+var month = now.getMonth();	//月
+var day = now.getDay();	//日
+var hour = now.getHours(); // 時 
+var min = now.getMinutes(); // 分 
+var sec = now.getSeconds(); // 秒 
+
+// 数値が1桁の場合、頭に0を付けて2桁で表示する指定 
+if(month < 10) { month = "0" + month; } 
+if(day < 10) { day = "0" + day; } 
+if(hour < 10) { hour = "0" + hour; } 
+if(min < 10) { min = "0" + min; } 
+if(sec < 10) { sec = "0" + sec; } 
+
+// フォーマットを指定（不要な行を削除する） 
+var watch1 = year + '.' + month + '.' + day + ' ' + hour + ':' + min + ':' + sec; // パターン1 
+
+// テキストフィールドにデータを渡す処理（不要な行を削除する） 
+document.form1.timefield.value = watch1; // パターン1 
+
+setTimeout("DispTime()", 1000); 
+
+} 
+
+//汎用サブウィンドウ
+function sub_window(url, name) {
+	sub_window_sub(url, name, "650", "700");
+}
+function sub_window_sub(url, name, width, height) {
+	var w
+	w = window.open(url, name, "width="+width+", height="+height+", resizable=yes, scrollbars=yes, dependent=yes, menubar=yes, location=yes");
+}
+//履修チェックダイヤログ用サブウィンドウ
+function check_window(url, name) {
+	var w
+	w = window.open(url, name, "menubar=yes, location=yes, width=500px, height=350px");
+	return(w);
+}
+//履修時間割検索用サブウィンドウ
+function search_window(url, name, width, height) {
+	var w
+	w = window.open(url, name, "width="+width+", height="+height+", resizable=yes, scrollbars=yes, dependent=yes, menubar=yes, location=yes, status=yes");
+}
+//シラバス用サブウィンドウ
+function syllabus_window(url) {
+	var w
+	w = window.open(url, "syllabus_sub", "");
+}
+//アンケート用プレビューウィンド
+function enquete_preview_window(url) {
+    var w
+    w = window.open(url, "enquete_preview", "width=900, height=600, resizable=yes, scrollbars=yes, dependent=yes, menubar=yes, , location=yes");
+}
+// マウスカーソルに関する処理
+var normalColor = "transparent";
+var hoverColor = "Lavender";
+function mout(obj) { obj.style.backgroundColor=normalColor; }
+function mover(obj) { obj.style.backgroundColor=hoverColor; }
